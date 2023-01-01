@@ -1,0 +1,24 @@
+body{
+     background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+}
+iframe{
+    margin: 5px 0 3px;
+}
+.h1{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    margin: 12px;
+    color: beige;
+    margin-left: 25%;
+
+}
