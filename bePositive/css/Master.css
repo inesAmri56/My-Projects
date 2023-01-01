@@ -1,0 +1,235 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+
+   
+
+}
+a:hover{
+    color: violet;
+
+}
+header{
+    background: #00000000;
+    padding: 15px;
+
+}
+.nav-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     background-color: rgba(255,255, 250, 0);
+     justify-content: center;
+     
+}
+.nav-menu > ul{display: flex;}
+.container{
+    background-color: #000000;
+    
+    list-style: none;
+    
+} 
+.nav-menu > ul >li {
+    position: relative;
+    white-space:nowrap;
+    padding: 10px 0 10px 22px; ;
+    list-style: none;
+}
+.nav-menu a{
+    display: block;
+    position: relative;
+    background-color: rgba(255,255, 250, 0);
+    transition:0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+padding: 0 4px;
+text-transform: uppercase;
+color: white;
+list-style: none;
+text-decoration: none;
+
+}
+.nav-menu > ul > li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    color: violet;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+
+
+}
+.nav-menu > ul > li a:hover{
+    color: violet;
+}
+
+.nav-menu a:hover::before,
+.nav-menu .active >a::before{
+    visibility: visible;
+    width: 100%;
+}
+.get-started-btn {
+    position: relative;
+    margin-left: 20%;
+    background-color: black;
+    border-radius: 4px;
+    padding: 6px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 13px;
+    display: inline-block;
+color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Poppins",sans-serif;
+    border: 2px solid violet;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+
+
+}
+.get-started-btn:hover{
+    background-color: violet;
+    color: black;
+    
+}
+.landing-page{
+    min-height: 100vh;
+    background-image: url('../img/be-positive.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: scroll;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* button{
+   
+   
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+width: 150px;
+    height: 30px;
+   
+
+} */
+
+.landing-page .overlay{
+    
+    position: absolute; 
+height: 100vh;
+background-color:  transparent rgb(173, 158, 173) ;
+
+width: 100%;
+
+left: 0;
+top: 0;
+margin-bottom: 0;
+z-index: 1;
+background-size: cover ;}
+
+.overlay p{
+    z-index: 2;
+    color: black;
+    width: 300px;
+    height: 100vh;
+    padding-top: 150px ;
+    padding-left: 50px;
+    justify-content: space-between;
+    font-size: 22px;
+    text-size-adjust: 10px;
+     font-style: italic;
+  
+    
+}
+
+
+ .span1{
+    color: rgb(80, 9, 146);
+    font-style: italic;
+}
+.header-area li  a{
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    display: inline-block;
+    left: 30%;
+    font-weight: 1000;
+    padding-top: 0;
+    
+     
+        
+    
+    
+}
+li {
+
+ list-style: none;
+display: inline-block;
+padding: 20px;}
+
+.header-area li:hover{
+    color: white;
+}
+.header-area .logo{
+    /* width: 100px; */
+    height: 50px;
+    
+    padding: 15px;
+    background-image: url('../img/logo.jpg');
+    background-size: 59px;
+    background-repeat: no-repeat;
+}
+ul{
+margin-left: 30%;
+padding-top: 0;
+margin-top: 0;
+display: flex;
+}
+/* responsive navbar */
+@media(max-width: 768px){
+    .get-started-btn{
+        margin: 0 48px 0;
+        padding: 6px 18px;
+
+    }
+}
+/* mobienavigationl  */
+.mobile-nav-toggle{
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    z-index: 9998; 
+    border: 0;
+    background: none;
+    font-size: 2px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+.mobile-nav-toggle i{
+    color: #fff;
+    position:fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.25;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+}
